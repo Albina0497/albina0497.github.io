@@ -1,0 +1,621 @@
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    .clearfix::after,
+    .header::after,
+    .grid::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    .container {
+        background: url(./images/background.jpg) no-repeat;
+        background-size: cover;
+        flex: 1;
+    }
+    
+    .wrapper {
+        width: 120rem;
+        margin: 0 auto;
+        min-height: 76.5rem;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        display: flex;
+        flex: 1;
+        margin-top: 4.5rem;
+        margin-bottom: 0;
+    }
+    
+    .nav__list li {
+        flex: 1;
+    }
+    
+    .menu {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.9rem;
+        flex: 2;
+        margin-top: 4.5rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    /* уюрать маркеры у списка */
+    
+    li {
+        list-style-type: none;
+    }
+    
+    li:hover {
+        background: rgba(255, 255, 255, 0.678);
+    }
+    
+    .tittle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 26.4rem;
+    }
+    
+    .welcome {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 3.3rem;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #fff;
+        text-transform: capitalize;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+    /* кнопка */
+    
+    a .button {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        background: transparent;
+        padding: .7em 1.5em;
+        border: 3px solid #fff;
+    }
+    
+    a .button:hover {
+        background: rgba(255, 255, 255, 0.678);
+    }
+    
+    .wrapper1 {
+        width: 120rem;
+        margin: 0 auto;
+        color: #555555;
+        padding-bottom: 10rem;
+    }
+    
+    .services {
+        text-align: center;
+        margin-bottom: 7.4rem;
+        color: inherit;
+        margin-top: 10rem;
+    }
+    
+    h3 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: inherit;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+    }
+    
+    .hr {
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2.5px solid #555555;
+        width: 4rem;
+        margin-bottom: 2.5rem;
+        color: inherit;
+    }
+    
+    .text {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.6rem;
+        color: inherit;
+    }
+    
+    .text2 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.4rem;
+        color: inherit;
+    }
+    
+    .advantage {
+        /* объявляем всю эту область флекс контейнером */
+        display: flex;
+        /* выстроить в один ряд */
+        flex-direction: row;
+    }
+    
+    .advantage__item {
+        width: 28%;
+        text-align: center;
+        margin-right: 8%;
+    }
+    /* убрать в последнем эдементе отступ справа */
+    
+    .advantage__item:last-child {
+        margin-right: 0;
+    }
+    
+    .advantage__headline {
+        margin-top: 2.9rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .background__wrapper2 {
+        background: #f8f8f8;
+    }
+    
+    .wrapper2 {
+        margin: 0 auto;
+        color: #555555;
+        min-height: 85.5rem;
+        width: 120rem;
+    }
+    
+    .about {
+        color: inherit;
+        padding-top: 10rem;
+        text-align: center;
+    }
+    
+    .flextext {
+        display: flex;
+        padding-top: 7.2rem;
+        margin-bottom: 7.4rem;
+    }
+    
+    .lorem1 {
+        margin-right: 3.6rem;
+    }
+    /* картинки в ряд */
+    
+    .grid {
+        display: flex;
+    }
+    
+    .grid__picture {
+        margin-right: 2.9rem;
+    }
+    
+    .grid__item {
+        text-align: center;
+        position: relative;
+    }
+    
+    .grid__text {
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    
+    .grid__text2 {
+        margin-top: 1.4rem;
+        font-size: 1.3rem;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .grid a:hover {
+        filter: grayscale(100%);
+    }
+    
+    .image__botton a {
+        position: absolute;
+        right: 2.9rem;
+        bottom: 18rem;
+    }
+    /* новый блок 3 latest works  */
+    
+    .wrapper3 {
+        margin: 0 auto;
+        color: #555555;
+        min-height: 85.5rem;
+        width: 120rem;
+        padding-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+    .latest__works {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    .menu2 {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+    
+    .nav__list1 a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    li {
+        list-style-type: none;
+        margin-right: 2.7rem;
+        text-transform: capitalize;
+    }
+    
+    .nav__list1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* делаем плитку из картинок */
+    
+    .tile a {
+        width: 33.6rem;
+        height: 32rem;
+    }
+    
+    .tile {
+        display: grid;
+        grid-gap: 3.2rem;
+        grid-template-columns: repeat(auto-fit, 336px);
+    }
+    
+    .tile a:hover {}
+    /* блок 4 */
+    
+    .wrapper4 {
+        background: url(images/bcg.jpg) no-repeat;
+        background-size: cover;
+        min-height: 36.9rem;
+        text-align: center;
+    }
+    
+    .question {
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+        color: #fff;
+        padding-top: 10rem;
+    }
+    
+    #two {
+        margin-top: 3rem;
+    }
+    /* блок 5 */
+    
+    .wrapper5 {
+        margin: 0 auto;
+        color: #555555;
+        min-height: 85.5rem;
+        width: 120rem;
+        margin-bottom: 10rem;
+    }
+    
+    .blog {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog1,
+    .blog2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .blog1__startup,
+    .blog2__startup {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .invitation1,
+    .invitation2 {
+        width: 64.5rem;
+    }
+    
+    .date1,
+    .date2 {
+        border: 3px solid #555555;
+        padding: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: 4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .blog1__img,
+    .blog2__img {
+        margin-right: 4rem;
+    }
+    
+    .startup {
+        color: #777777;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+    .startup #By,
+    .user #By {
+        color: #777777;
+        font-size: 1.3rem;
+        font-style: italic;
+        text-transform: capitalize;
+        margin-top: 2rem;
+    }
+    
+    .user {
+        color: #777777;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+    .read {
+        color: #777777;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin-top: 3.5rem;
+    }
+    
+    body>div.wrapper5>div.blog>div.blog1>div.invitation1>div.blog1__startup>div.startup>a,
+    body>div.wrapper5>div.blog>div.blog2>div.invitation2>div.blog2__startup>div.user>a,
+    body>div.wrapper5>div.blog>div.blog1>div.invitation1>div.read>a,
+    body>div.wrapper5>div.blog>div.blog2>div.invitation2>div.read>a {
+        color: #777777;
+    }
+    
+    body>div.wrapper5>div.blog>div.blog1>div.invitation1>div.blog1__startup>div.startup>a:hover,
+    body>div.wrapper5>div.blog>div.blog2>div.invitation2>div.blog2__startup>div.user>a:hover,
+    body>div.wrapper5>div.blog>div.blog1>div.invitation1>div.read>a:hover,
+    body>div.wrapper5>div.blog>div.blog2>div.invitation2>div.read>a:hover {
+        font-weight: bold;
+        color: #c0301c;
+    }
+    /* линия */
+    
+    .hr2 {
+        border-bottom: 1px solid #dddddd;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+    
+    .wrapper6 {
+        margin: 0 auto;
+        color: #555555;
+        min-height: 48rem;
+        width: 120rem;
+        margin-bottom: 10rem;
+    }
+    
+    .media {
+        display: flex;
+        justify-content: space-between;
+        padding: 10rem 11rem 8.5rem 11rem;
+        align-items: center;
+    }
+    
+    .text3 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.8rem;
+        color: inherit;
+        text-align: center;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    .john {
+        margin-top: 4.5rem;
+    }
+    
+    .page_dots {
+        width: 1.4rem;
+        height: 1.4rem;
+        background-color: #dddddd;
+        border-radius: 50%;
+    }
+    
+    .page_dots:not(:first-child) {
+        margin-left: 5px;
+    }
+    
+    .dots__container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
+        justify-content: center;
+    }
+    
+    .page_dots--active {
+        background-color: #c0301c;
+    }
+    /* обратная связь */
+    
+    .wrapper7 {
+        margin: 0 auto;
+        color: #555555;
+        min-height: 66rem;
+        width: 120rem;
+        margin-bottom: 10rem;
+    }
+    
+    .pizdec {
+        display: flex;
+    }
+    
+    .touch {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    .uppercase {
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .address {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+    
+    .address__img {
+        margin-right: 2rem;
+    }
+    
+    .uppercase {
+        margin-bottom: 1.3rem;
+    }
+    
+    .contact {
+        margin-right: 16rem;
+    }
+    
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        width: 74rem;
+    }
+    
+    .feedback_row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2.5rem;
+    }
+    
+    .feedback_input_container:not(:first-child) {
+        margin-left: 1rem;
+    }
+    
+    .feedback_input_container {
+        flex: 0 50%;
+    }
+    
+    .feedback_text-area_container {
+        display: flex;
+        flex: 1;
+    }
+    
+    .feedback_text-area_container input:last-child {
+        padding-left: 1rem;
+    }
+    
+    .feedback_text-area_container textarea {
+        width: 74rem;
+    }
+    
+    .feedback_button_container {
+        flex: 1;
+    }
+    
+    .feedback_text_container {
+        flex: 6;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.2rem;
+    }
+    
+    input {
+        width: 35rem;
+        height: 4.5rem;
+        margin-right: 3rem;
+    }
+    
+    textarea {
+        height: 10rem;
+    }
+    
+    .but {
+        width: 17rem;
+        height: 4.3rem;
+        margin-right: 4rem;
+    }
+    /* последний блок */
+    
+    .background__wrapper3 {
+        background: #c0301c;
+    }
+    
+    .wrapper8 {
+        height: 30.8rem;
+    }
+    
+    .hr3 {
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2.5px solid #fff;
+        width: 5rem;
+        margin-bottom: 2.5rem;
+        color: inherit;
+        margin-top: 2.7rem;
+    }
+    
+    #bird {
+        padding-top: 10rem;
+    }
+    
+    .text4 {
+        color: #fff;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.2rem;
+    }
+    
+    .bird {
+        margin-right: 1.3rem;
+    }
